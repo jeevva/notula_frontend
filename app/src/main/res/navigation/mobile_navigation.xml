@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/grey"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.alrosyid.notula.fragments.home.HomeFragment"
+        android:label="@string/dashboard"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_meet"
+        android:name="com.alrosyid.notula.fragments.meetings.MeetingsFragment"
+        android:label="@string/meetings"
+        tools:layout="@layout/fragment_meetings" />
+    <fragment
+        android:id="@+id/nav_notula"
+        android:name="com.alrosyid.notula.fragments.notulas.NotulaFragment"
+        android:label="@string/notula"
+        tools:layout="@layout/fragment_notula" />
+    <fragment
+        android:id="@+id/nav_report"
+        android:name="com.alrosyid.notula.fragments.notulas.ReportFragment"
+        android:label="@string/report"
+        tools:layout="@layout/fragment_notula" />
+
+    <fragment
+        android:id="@+id/nav_notes"
+        android:name="com.alrosyid.notula.fragments.notes.NotesFragments"
+        android:label="@string/notes"
+        tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.alrosyid.notula.fragments.account.AccountFragment"
+        android:label="@string/account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.alrosyid.notula.fragments.account.AboutFragment"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about" />
+</navigation>

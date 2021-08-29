@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <!-- WebView to load webPage -->
+    <WebView
+        android:id="@+id/webViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp" />
+
+    <!-- Button To save the Pdf file when clicked -->
+    <Button
+        android:id="@+id/savePdfBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="@string/download_pdf"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:background="@color/grey"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:padding="20dp"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    >-->
+    <!--    <RelativeLayout android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        >-->
+
+    <!--        <WebView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:id="@+id/webview"-->
+    <!--            android:layout_height="match_parent">-->
+
+    <!--        </WebView>-->
+
+    <!--        <ProgressBar-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:id="@+id/progressbar"-->
+    <!--            android:layout_centerInParent="true"-->
+    <!--            android:layout_height="wrap_content" />-->
+
+
+    <!--    </RelativeLayout>-->
+
+    <!--&lt;!&ndash;    <LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:orientation="vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:clickable="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:focusable="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_height="wrap_content">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;        <RelativeLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;            >&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            <com.google.android.material.textfield.TextInputLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"&ndash;&gt;-->
+    <!--&lt;!&ndash;            app:boxStrokeColor="@color/colorAccent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:id="@+id/tilTitle"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:counterOverflowTextAppearance="@style/CounterOverFlow"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:counterTextAppearance="@style/CounterText"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:hintTextAppearance="@style/HintText"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:counterTextColor="@color/colorBlack"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_marginBottom="6dp">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;                <com.google.android.material.textfield.TextInputEditText&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:id="@+id/tieTitle"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:enabled="false"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:hint="Notula"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:inputType="text"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:textColor="@color/colorBlack"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:textSize="15sp" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            </com.google.android.material.textfield.TextInputLayout>&ndash;&gt;-->
+    <!--&lt;!&ndash;            <com.google.android.material.textfield.TextInputLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"&ndash;&gt;-->
+    <!--&lt;!&ndash;            app:boxStrokeColor="@color/colorAccent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:id="@+id/tilMeetingsTitle"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_below="@+id/tilTitle"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:counterTextAppearance="@style/CounterText"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:hintTextAppearance="@style/HintText"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:counterTextColor="@color/colorBlack"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_marginBottom="6dp">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;                <com.google.android.material.textfield.TextInputEditText&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:id="@+id/tieMeetingsTitle"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:textColor="@color/colorBlack"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:enabled="false"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:hint="Rapat"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:inputType="text"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:textSize="15sp" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            </com.google.android.material.textfield.TextInputLayout>&ndash;&gt;-->
+    <!--&lt;!&ndash;            <com.google.android.material.textfield.TextInputLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"&ndash;&gt;-->
+    <!--&lt;!&ndash;            app:boxStrokeColor="@color/colorAccent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:id="@+id/tilDate"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_below="@+id/tilMeetingsTitle"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_marginBottom="6dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:counterTextAppearance="@style/CounterText"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:hintTextAppearance="@style/HintText"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:counterTextColor="@color/colorBlack">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;                <com.google.android.material.textfield.TextInputEditText&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:id="@+id/tieDate"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:hint="@string/date"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:drawableRight="@drawable/ic_baseline_date_range_24"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:textColor="@color/colorBlack"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:enabled="false"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:inputType="text"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:textSize="15sp" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            </com.google.android.material.textfield.TextInputLayout>&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;        </RelativeLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;    </LinearLayout>&ndash;&gt;-->
+
+    <!--</FrameLayout>-->

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.alrosyid.notula">
+
+    <queries>
+        <intent>
+            <action android:name="android.speech.RecognitionService" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.notulas.ReportActivity" />
+        <activity android:name=".activities.notes.EditNotesActivity" />
+        <activity
+            android:name=".activities.notes.DetailNotesActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".activities.notes.AddNotesActivity" />
+        <activity android:name=".activities.photos.DetailPhotosActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.meetings.DetailMeetingsActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activities.notulas.DetailReportActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activities.notulas.DetailNotulaActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activities.followups.DetailFollowUpActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".activities.meetings.AddMeetingsActivity" />
+        <activity android:name=".activities.meetings.AddMeetingsHomeActivity" />
+        <activity android:name=".activities.meetings.AddMeetingsNotulaOnlyActivity" />
+        <activity android:name=".activities.meetings.AddMeetingsNotulaActivity" />
+        <activity android:name=".activities.attendances.EditAttendancesActivity" />
+        <activity android:name=".activities.meetings.EditMeetingsActivity" />
+        <activity android:name=".activities.attendances.AddAttendancesActivity" />
+        <activity android:name=".activities.notulas.EditNotulaActivity" />
+        <activity android:name=".activities.notulas.EditNotulaOnlyActivity" />
+        <activity android:name=".activities.notulas.AddNotulasActivity" />
+        <activity android:name=".activities.notulas.AddNotulasOnlyActivity" />
+        <activity android:name=".activities.notulas.AddNotulasHomeActivity" />
+        <activity android:name=".activities.points.AddPointsActivity" />
+        <activity android:name=".activities.points.EditPointsActivity" />
+        <activity android:name=".activities.followups.AddFollowUpActivity" />
+        <activity android:name=".activities.followups.EditFollowUpActivity" />
+        <activity android:name=".activities.accounts.EditAccountsActivity" />
+        <activity android:name=".activities.accounts.ChangePassAccountActivity" />
+        <activity android:name=".activities.photos.AddPhotosActivity" />
+        <activity android:name=".activities.photos.EditPhotosActivity" />
+        <activity android:name=".activities.records.AddRecordsActivity" />
+        <activity android:name=".activities.records.DetailRecordsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="audio/*" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.records.EditRecordsActivity" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activities.AuthActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

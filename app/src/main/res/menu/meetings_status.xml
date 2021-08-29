@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dropdown_upcoming"
+        android:title="@string/upcoming"/>
+    <item
+        android:id="@+id/dropdown_pending"
+        android:title="@string/pending"/>
+    <item
+        android:id="@+id/dropdown_cancel"
+        android:title="@string/cancel"/>
+
+    <item
+        android:id="@+id/dropdown_done"
+        android:title="@string/done"/>
+</menu>

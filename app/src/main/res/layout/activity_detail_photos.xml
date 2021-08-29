@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTrans"
+    android:orientation="horizontal">
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/recyclerHome"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:clipToPadding="false"-->
+    <!--        android:paddingBottom="60dp"></androidx.recyclerview.widget.RecyclerView>-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tilDate"
+        android:background="@color/colorTrans">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/left_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTrans"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/center_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTrans"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/top_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTrans"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bottom_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTrans"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".8" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/right_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTrans"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1" />
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imageview_trash"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:src="@drawable/sample"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@+id/bottom_guideline"-->
+        <!--            app:layout_constraintLeft_toLeftOf="@+id/left_guideline"-->
+        <!--            app:layout_constraintRight_toRightOf="@+id/right_guideline"-->
+        <!--            app:layout_constraintTop_toTopOf="@id/top_guideline"-->
+        <!--            tools:ignore="MissingConstraints" />-->
+        <!--        <RelativeLayout-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@+id/bottom_guideline"-->
+        <!--            app:layout_constraintLeft_toLeftOf="@+id/left_guideline"-->
+        <!--            app:layout_constraintRight_toRightOf="@+id/right_guideline"-->
+        <!--            app:layout_constraintTop_toTopOf="@id/top_guideline"-->
+        <!--            >-->
+        <!--          <com.facebook.drawee.view.SimpleDraweeView-->
+        <!--                android:id="@+id/my_image_view"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="300dp"-->
+        <!--                app:placeholderImage="@drawable/sample"-->
+        <!--              app:placeholderImageScaleType="centerInside"/>-->
+        <!--        </RelativeLayout>-->
+
+
+
+        <RelativeLayout
+            android:id="@+id/layoutBtnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:background="@android:color/transparent"
+            tools:ignore="MissingConstraints">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/my_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:actualImageResource="@drawable/ic_baseline_image_24_accent"
+                app:actualImageScaleType="fitCenter"
+                />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!-- >-->
+
+<!--    &lt;!&ndash; WebView to load webPage &ndash;&gt;-->
+<!--    <WebView-->
+
+<!--        android:id="@+id/webViewMain"-->
+<!--        android:background="@color/colorTrans"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--      tools:layout_centerVertical="true"-->
+<!--        tools:layout_centerHorizontal="true"-->
+<!--        />-->
+
+<!--    &lt;!&ndash; Button To save the Pdf file when clicked &ndash;&gt;-->
+
+
+<!--</RelativeLayout>-->

@@ -1,0 +1,25 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="background">@drawable/side_nav_bar</item>
+    </style>
+    <style name="AppTheme.ActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="color">@color/colorPrimary</item>
+        <item name="background">@drawable/side_nav_bar</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="background">@drawable/side_nav_bar</item>
+    </style>
+    <style name="AppTheme.AppBarOverlays" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="background">@drawable/side_nav_bar</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="background">@drawable/side_nav_bar</item>
+    </style>
+</resources>

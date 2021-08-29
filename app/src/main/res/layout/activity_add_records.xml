@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical">
+
+            <!--        <ImageView-->
+            <!--            android:id="@+id/imgAddPhotos"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="200dp"-->
+            <!--            android:scaleType="fitCenter"-->
+            <!--            android:src="@drawable/sample" />-->
+
+<!--            <com.facebook.drawee.view.SimpleDraweeView-->
+<!--                android:id="@+id/my_image_view"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                app:actualImageScaleType="fitCenter"-->
+<!--                app:placeholderImage="@drawable/ic_baseline_play_arrow_24"-->
+<!--                app:placeholderImageScaleType="fitCenter" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilRecordsName"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tilTitle"
+                    android:layout_marginBottom="6dp"
+                    app:boxStrokeColor="@color/colorAccent"
+                    app:counterTextAppearance="@style/CounterText"
+                    app:counterTextColor="@color/colorBlack"
+                    app:hintTextAppearance="@style/HintText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tieRecordsName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_baseline_mic_24_black"
+                        android:focusable="false"
+                        android:onClick="recording"
+                        android:hint="@string/Record"
+                        android:singleLine="false"
+                        android:inputType="date"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--            <Button-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="42dp"-->
+                <!--                android:layout_marginTop="12dp"-->
+                <!--                android:layout_marginBottom="10dp"-->
+                <!--                android:background="@drawable/round_accent"-->
+                <!--                android:onClick="changePhoto"-->
+                <!--                android:text="@string/chose_photo"-->
+                <!--                android:textAllCaps="false"-->
+                <!--                android:textColor="@color/colorWhite"-->
+                <!--                 />-->
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilTitle"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    app:boxStrokeColor="@color/colorAccent"
+                    app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                    app:counterTextAppearance="@style/CounterText"
+                    app:counterTextColor="@color/colorBlack"
+                    app:hintTextAppearance="@style/HintText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tieTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/title"
+
+                        android:inputType="text"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/btnUpload"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/round"
+                    android:text="@string/upload"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
